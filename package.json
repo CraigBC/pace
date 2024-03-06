@@ -5,7 +5,7 @@
   "scripts": {
     "build:prod:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/prod.css --minify",
     "build:preview:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/preview.css --minify",
-    "build:dev:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/dev.css --minify",
+    "build:dev:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/dev.css --minify --watch",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
