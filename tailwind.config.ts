@@ -111,6 +111,9 @@ const config: Config = {
       lineHeight: {
         base: "1.4",
       },
+      padding: {
+        "2em": "2em",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
