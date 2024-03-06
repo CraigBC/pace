@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build:prod:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/prod.css --minify",
+    "build:stage:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/stage.css --minify",
     "build:dev:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/dev.css --minify",
     "dev": "next dev",
     "build": "next build",
