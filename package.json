@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/styles/globals.css -o ./public/styles.css",
+    "build:prod:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/prod.css --minify",
+    "build:dev:css": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/dev.css --minify",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
