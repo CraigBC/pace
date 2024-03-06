@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="email"], [type="text"], [type="password"], [type="tel"], [type="url"], [type="search"] {
+    @apply block w-full rounded-md border-0 py-1.5 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6;
+}
+
+label {
+    @apply block text-sm font-medium leading-6 text-neutral-900 mb-1
+}
