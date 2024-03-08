@@ -1,3 +1,5 @@
+import LogoBanner from "@/components/wip/LogoBanner";
+
 export default function Home() {
   return (
     <div className="bg-white">
@@ -20,6 +22,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <LogoBanner />
     </div>
   );
 }
