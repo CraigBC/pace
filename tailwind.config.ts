@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -17,6 +18,8 @@ const config: Config = {
       gray: colors.neutral,
       neutral: colors.neutral,
       primary: colors.blue,
+      red: colors.red,
+      green: colors.green,
     },
     fontSize: {
       xs: [
@@ -116,6 +119,78 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    plugin(function ({ addBase, theme }) {
+      addBase({
+        body: {
+          color: theme("colors.neutral.900"),
+          fontSize: theme("fontSize.base"),
+
+          // padding: "2em",
+        },
+        p: {
+          maxWidth: "65ch",
+          color: theme("colors.neutral.600"),
+          fontSize: theme("fontSize.base"),
+        },
+        a: {
+          fontWeight: theme("fontWeight.medium"),
+          color: theme("colors.primary.600"),
+        },
+        h1: {
+          color: theme("colors.neutral.900"),
+          fontSize: theme("fontSize.3xl"),
+          fontWeight: theme("fontWeight.bold"),
+          lineHeight: "1.2",
+          maxWidth: "20ch",
+          textWrap: "balance",
+        },
+        h2: {
+          color: theme("colors.neutral.900"),
+          fontSize: theme("fontSize.2xl"),
+          fontWeight: theme("fontWeight.bold"),
+          lineHeight: "1.2",
+          maxWidth: "28ch",
+          textWrap: "balance",
+        },
+        h3: {
+          color: theme("colors.neutral.900"),
+          fontSize: theme("fontSize.xl"),
+          fontWeight: theme("fontWeight.bold"),
+          lineHeight: "1.2",
+          maxWidth: "28ch",
+          textWrap: "balance",
+        },
+        h4: {
+          color: theme("colors.neutral.900"),
+          fontSize: theme("fontSize.lg"),
+          fontWeight: theme("fontWeight.bold"),
+          lineHeight: "1.2",
+        },
+        h5: { fontSize: theme("fontSize.2xl") },
+        h6: { fontSize: theme("fontSize.2xl") },
+        blockquote: {
+          color: theme("colors.neutral.800"),
+          fontSize: theme("fontSize.lg"),
+          paddingInlineStart: "1em",
+          borderInlineStart: "0.3em solid",
+          borderColor: theme("colors.primary.600"),
+          fontStyle: "italic",
+          maxWidth: "50ch",
+        },
+        ul: { paddingInlineStart: "1em", listStyleType: "disc" },
+        ol: { paddingInlineStart: "1em", listStyleType: "decimal" },
+        article: {
+          maxWidth: "65ch",
+          margin: "auto",
+        },
+        label: {
+          fontSize: theme("fontSize.base"),
+          fontWeight: theme("fontWeight.medium"),
+        },
+      });
+    }),
+  ],
 };
 export default config;
