@@ -14,7 +14,7 @@ export default function PaymentForm() {
       <div className="mx-auto max-w-lg">
         <button
           type="button"
-          className="flex w-full items-center justify-center rounded-md border border-transparent bg-black py-2 text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+          className="flex w-full items-center justify-center rounded-md border border-transparent bg-black py-2 text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
         >
           <span className="sr-only">Pay with Apple Pay</span>
           <svg className="h-5 w-auto" fill="currentColor" viewBox="0 0 50 20">
@@ -27,10 +27,10 @@ export default function PaymentForm() {
             className="absolute inset-0 flex items-center"
             aria-hidden="true"
           >
-            <div className="w-full border-t border-gray-200" />
+            <div className="w-full border-t border-neutral-200" />
           </div>
           <div className="relative flex justify-center">
-            <span className="bg-white px-4 text-sm font-medium text-gray-500">
+            <span className="bg-white px-4 text-sm font-medium text-neutral-500">
               or
             </span>
           </div>
@@ -41,7 +41,7 @@ export default function PaymentForm() {
             <div className="col-span-full">
               <label
                 htmlFor="email-address"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Email address
               </label>
@@ -51,7 +51,7 @@ export default function PaymentForm() {
                   id="email-address"
                   name="email-address"
                   autoComplete="email"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function PaymentForm() {
             <div className="col-span-full">
               <label
                 htmlFor="name-on-card"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Name on card
               </label>
@@ -69,7 +69,7 @@ export default function PaymentForm() {
                   id="name-on-card"
                   name="name-on-card"
                   autoComplete="cc-name"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function PaymentForm() {
             <div className="col-span-full">
               <label
                 htmlFor="card-number"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Card number
               </label>
@@ -87,7 +87,7 @@ export default function PaymentForm() {
                   id="card-number"
                   name="card-number"
                   autoComplete="cc-number"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function PaymentForm() {
             <div className="col-span-8 sm:col-span-9">
               <label
                 htmlFor="expiration-date"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Expiration date (MM/YY)
               </label>
@@ -105,7 +105,7 @@ export default function PaymentForm() {
                   name="expiration-date"
                   id="expiration-date"
                   autoComplete="cc-exp"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function PaymentForm() {
             <div className="col-span-4 sm:col-span-3">
               <label
                 htmlFor="cvc"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 CVC
               </label>
@@ -123,7 +123,7 @@ export default function PaymentForm() {
                   name="cvc"
                   id="cvc"
                   autoComplete="csc"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function PaymentForm() {
             <div className="col-span-full">
               <label
                 htmlFor="address"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Address
               </label>
@@ -141,7 +141,7 @@ export default function PaymentForm() {
                   id="address"
                   name="address"
                   autoComplete="street-address"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function PaymentForm() {
             <div className="col-span-full sm:col-span-4">
               <label
                 htmlFor="city"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 City
               </label>
@@ -159,7 +159,7 @@ export default function PaymentForm() {
                   id="city"
                   name="city"
                   autoComplete="address-level2"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function PaymentForm() {
             <div className="col-span-full sm:col-span-4">
               <label
                 htmlFor="region"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 County
               </label>
@@ -177,7 +177,7 @@ export default function PaymentForm() {
                   id="region"
                   name="region"
                   autoComplete="address-level1"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -185,7 +185,7 @@ export default function PaymentForm() {
             <div className="col-span-full sm:col-span-4">
               <label
                 htmlFor="postal-code"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-neutral-700"
               >
                 Postcode
               </label>
@@ -195,7 +195,7 @@ export default function PaymentForm() {
                   id="postal-code"
                   name="postal-code"
                   autoComplete="postal-code"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="block w-full rounded-md border-neutral-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -208,12 +208,12 @@ export default function PaymentForm() {
                 name="same-as-shipping"
                 type="checkbox"
                 defaultChecked
-                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                className="h-4 w-4 rounded border-neutral-300 text-primary-600 focus:ring-primary-500"
               />
             </div>
             <label
               htmlFor="same-as-shipping"
-              className="text-sm font-medium text-gray-900"
+              className="text-sm font-medium text-neutral-900"
             >
               Billing address is the same as shipping address
             </label>
@@ -221,14 +221,14 @@ export default function PaymentForm() {
 
           <button
             type="submit"
-            className="mt-6 w-full rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="mt-6 w-full rounded-md border border-transparent bg-primary-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
           >
             Pay {total}
           </button>
 
-          <p className="mt-6 flex justify-center text-sm font-medium text-gray-500">
+          <p className="mt-6 flex justify-center text-sm font-medium text-neutral-500">
             <LockClosedIcon
-              className="mr-1.5 h-5 w-5 text-gray-400"
+              className="mr-1.5 h-5 w-5 text-neutral-400"
               aria-hidden="true"
             />
             Payment details are secured
