@@ -1,0 +1,47 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Foundation/Typography/Text (max)" />
+
+export const typography = {
+    type: {
+        display: '"BC Text", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    },
+    weight: {
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+    },
+    size: {
+        s1: 20.00,
+        s2: 25.00,
+        s3: 31.25,
+        s4: 39.06,
+        s5: 48.83,
+        s6: 61.04,
+    },
+};
+
+export const SampleText = 'This is PaceUI text at maximum viewport width.';
+
+# Text (max)
+
+**Font:** BC Text
+
+**Viewport:** max: 1240px
+
+**Weights:** 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
+
+<Typeset
+    fontSizes={[
+        Number(typography.size.s1),
+        Number(typography.size.s2),
+        Number(typography.size.s3),
+        Number(typography.size.s4),
+        Number(typography.size.s5),
+        Number(typography.size.s6),
+    ]}
+    fontWeight={typography.weight.bold}
+    sampleText={SampleText}
+    fontFamily={typography.type.primary}
+/>

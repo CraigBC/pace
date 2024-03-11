@@ -1,0 +1,47 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Foundation/Typography/Display (min)" />
+
+export const typography = {
+    type: {
+        display: '"Pace Display", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    },
+    weight: {
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+    },
+    size: {
+        s1: 17.00,
+        s2: 20.40,
+        s3: 24.48,
+        s4: 29.38,
+        s5: 35.25,
+        s6: 42.30,
+    },
+};
+
+export const SampleText = 'This is PaceUI text at minimum viewport width.';
+
+# Display (min)
+
+**Font:** Pace Display
+
+**Viewport:** min: 320px
+
+**Weights:** 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
+
+<Typeset
+    fontSizes={[
+        Number(typography.size.s1),
+        Number(typography.size.s2),
+        Number(typography.size.s3),
+        Number(typography.size.s4),
+        Number(typography.size.s5),
+        Number(typography.size.s6),
+    ]}
+    fontWeight={typography.weight.bold}
+    sampleText={SampleText}
+    fontFamily={typography.type.primary}
+/>
