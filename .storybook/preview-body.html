@@ -1,0 +1,82 @@
+<style>
+    :root {
+        font-family: Inter, sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+        :root {
+            font-family: InterVariable, sans-serif;
+        }
+    }
+
+    html {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    a {
+        color: currentColor;
+        text-decoration-thickness: 0.3ex;
+        text-underline-offset: 0.3ex;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: Inter, sans-serif;
+        font-weight: 800;
+        line-height: 1.1;
+        text-wrap: balance;
+    }
+
+
+    ul,
+    ol {
+        -webkit-padding-start: 1em;
+        padding-inline-start: 1em;
+    }
+
+    blockquote {
+        -webkit-padding-start: 1em;
+        padding-inline-start: 1em;
+        -webkit-border-start: 0.3em solid;
+        border-inline-start: 0.3em solid;
+        font-style: italic;
+    }
+
+    /* Utilities */
+    .flow > * + * {
+        -webkit-margin-before: var(--flow-space, 1em);
+        margin-block-start: var(--flow-space, 1em);
+    }
+
+    /* Flow and rythm */
+    :is(h1, h2, h3, blockquote) {
+        --flow-space: 1.5em;
+    }
+
+    :is(h1, h2, h3) + * {
+        --flow-space: 0.5em;
+    }
+
+    /* Line lengths */
+    article {
+        max-width: 65ch;
+        margin-inline: auto;
+    }
+
+    blockquote {
+        max-width: 50ch;
+    }
+
+    h1 {
+        max-width: 20ch;
+    }
+
+    h2,
+    h3 {
+        max-width: 28ch;
+    }
+</style>
+
+<div id="custom-root"></div>

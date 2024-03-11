@@ -13,30 +13,21 @@ export default function Embedded() {
             Plain <code>&lt;img&gt;</code> element
           </h3>
           <p>
-            <img
-              src="https://placekitten.com/480/480"
-              alt="Photo of a kitten"
-            />
+            <img src="/pace-ui-logo.png" alt="This is alt text" />
           </p>
           <h3>
             <code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code>{" "}
             element
           </h3>
           <figure>
-            <img
-              src="https://placekitten.com/420/420"
-              alt="Photo of a kitten"
-            />
+            <img src="/pace-ui-logo.png" alt="This is alt text" />
           </figure>
           <h3>
             <code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code>{" "}
             and <code>&lt;figcaption&gt;</code> elements
           </h3>
           <figure>
-            <img
-              src="https://placekitten.com/420/420"
-              alt="Photo of a kitten"
-            />
+            <img src="/pace-ui-logo.png" alt="This is alt text" />
             <figcaption>Here is a caption for this image.</figcaption>
           </figure>
           <h3>
@@ -45,14 +36,8 @@ export default function Embedded() {
           </h3>
           <figure>
             <picture>
-              <source
-                srcSet="https://placekitten.com/800/800"
-                media="(min-width: 800px)"
-              />
-              <img
-                src="https://placekitten.com/420/420"
-                alt="Photo of a kitten"
-              />
+              <source srcSet="/pace-ui-logo.png" media="(min-width: 800px)" />
+              <img src="/pace-ui-logo.png" alt="This is alt text" />
             </picture>
           </figure>
         </div>
@@ -68,7 +53,7 @@ export default function Embedded() {
         </header>
         <div
           style={{
-            backgroundImage: 'url("https://placekitten.com/300/300")',
+            backgroundImage: 'url("/pace-ui-logo.png")',
             width: 300,
             height: 300,
           }}
