@@ -18,7 +18,7 @@ export default create({
   textInverseColor: "#fafafa",
   textMutedColor: "#d4d4d4",
   barTextColor: "#737373",
-  barHoverColor: "#404040",
+  barHoverColor: "#2563eb",
   barSelectedColor: "#2563eb",
   barBg: "#fafafa",
   buttonBg: "#2563eb",
