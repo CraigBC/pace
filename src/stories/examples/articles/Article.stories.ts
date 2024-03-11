@@ -12,7 +12,7 @@ const meta: Meta<typeof Article> = {
 export default meta;
 type Story = StoryObj<IArticle>;
 
-export const Article020224WithProposedMarkupAndStructure: Story = {
+export const DesignSystemMarkupAndStructure_Article_02_02_24: Story = {
   args: {
     html: `
   <header>
@@ -69,7 +69,7 @@ export const Article020224WithProposedMarkupAndStructure: Story = {
   },
 };
 
-export const Article020224WithProposedMarkup: Story = {
+export const BaseMarkup_Article_02_02_24: Story = {
   args: {
     html: `<header><h1>Great Britain Storms to Team Relay Silver on Day One of the 2024 UCI Cyclo-Cross World Championships</h1>
 <p>Great Britain kicked off the 2024 UCI Cyclo-cross World Championships with impeccable team tactics to see them take a silver medal in the team relay in a nail-biting sprint finish on day one of competition in Tabor.</p>
@@ -92,7 +92,7 @@ export const Article020224WithProposedMarkup: Story = {
   },
 };
 
-export const Article020224WithCurrentMarkup: Story = {
+export const CurrentZuvviHTML_Article_02_02_24: Story = {
   args: {
     html: `<h1>Great Britain Storms to Team Relay Silver on Day One of the 2024 UCI Cyclo-Cross World Championships</h1>
 <h2>Great Britain kicked off the 2024 UCI Cyclo-cross World Championships with impeccable team tactics to see them take a silver medal in the team relay in a nail-biting sprint finish on day one of competition in Tabor.</h2>
