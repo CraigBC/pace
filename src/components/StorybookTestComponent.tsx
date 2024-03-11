@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeading from "@/components/sectioning/SectionHeading";
 
 interface BaseParam {
   type: string;
@@ -88,7 +89,7 @@ const StorybookTestComponent: React.FC<StoryBookTestComponentParams> = (
 ) => {
   return (
     <div>
-      <h2>Storybook Test Component</h2>
+      <SectionHeading title="Storybook Test Component" />
       <pre>{JSON.stringify(props, null, 2)}</pre>
     </div>
   );

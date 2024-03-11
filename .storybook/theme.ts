@@ -12,8 +12,9 @@ export default create({
   appBorderColor: "#d4d4d4",
   appBorderRadius: 4,
   fontBase:
-    '"Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-  // fontCode: string;
+    'Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+  fontCode:
+    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
   textColor: "#171717",
   textInverseColor: "#fafafa",
   textMutedColor: "#d4d4d4",
@@ -21,10 +22,10 @@ export default create({
   barHoverColor: "#2563eb",
   barSelectedColor: "#2563eb",
   barBg: "#fafafa",
-  buttonBg: "#2563eb",
+  buttonBg: "#f5f5f5",
   buttonBorder: "transparent",
-  // booleanBg: "string";
-  // booleanSelectedBg: "string";
+  booleanBg: "#bfdbfe",
+  booleanSelectedBg: "#ffffff",
   inputBg: "#ffffff",
   inputBorder: "#d4d4d4",
   inputTextColor: "#171717",
@@ -33,5 +34,5 @@ export default create({
   brandUrl: "https://pace.britishcycling.org.uk",
   brandImage: "https://pace.britishcycling.org.uk/pace-ui-logo.png",
   brandTarget: "_self",
-  // gridCellSize?: number;
+  gridCellSize: 12,
 });

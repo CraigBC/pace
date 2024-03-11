@@ -13,5 +13,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    title: "Section Heading",
+  },
+};
+
+export const WithChild: Story = {
+  args: {
+    children: "Not an h3, just plain text",
+  },
 };
