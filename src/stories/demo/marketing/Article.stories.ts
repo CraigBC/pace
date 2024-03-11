@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Article, { IArticle } from "@/components/examples/Article";
+import Article, { IArticle } from "@/components/examples/marketing/Article";
 
 const meta: Meta<typeof Article> = {
-  title: "Page Examples/Article",
+  title: "Demo/Marketing/Article",
   component: Article,
   parameters: {},
   tags: ["autodocs"],
