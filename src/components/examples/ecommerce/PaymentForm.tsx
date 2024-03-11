@@ -1,10 +1,6 @@
 import { LockClosedIcon } from "@heroicons/react/16/solid";
 
 export default function PaymentForm() {
-  const subtotal = "£210.00";
-  const discount = { code: "CHEAPSKATE", amount: "$24.00" };
-  const taxes = "£23.68";
-  const shipping = "£22.00";
   const total = "£341.68";
   return (
     <section
