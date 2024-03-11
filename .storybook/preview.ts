@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import customTheme from "./theme";
 import "@/styles/tailwind.css";
 
 const preview: Preview = {
@@ -9,6 +10,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    docs: {
+      theme: customTheme,
     },
   },
 };
